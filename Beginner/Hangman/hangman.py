@@ -7,9 +7,9 @@ import messages
 if __name__ == '__main__':
     print(art.logo)
     word = random.choice(words.word_list)
-    blanks = ['_'] * len(word)
+    blanks = [messages.blank] * len(word)
     stage_counter = 6
-    while stage_counter > 0 or '_' not in blanks:
+    while stage_counter > 0 or messages.blank not in blanks:
         print(art.stages[stage_counter])
         letter = input(messages.prompt)
         if letter.lower() in blanks:

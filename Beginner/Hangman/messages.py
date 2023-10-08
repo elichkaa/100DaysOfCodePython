@@ -1,5 +1,6 @@
 prompt = "Guess letter: "
 success = "You are one step closer to the rescue. Well done and continue in the same spirit so you don't die."
+blank = '_'
 
 
 def repeating(letter):
