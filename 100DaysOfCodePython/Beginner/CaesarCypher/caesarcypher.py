@@ -29,8 +29,7 @@ if __name__ == '__main__':
     print(art.logo)
     end = False
     while not end:
-        print(messages.prompt)
-        choice = input()
+        choice = input(messages.prompt)
         if choice == messages.encrypt:
             encrypt(list(input(messages.word)))
         elif choice == messages.decrypt:
@@ -38,7 +37,6 @@ if __name__ == '__main__':
         else:
             print(messages.unavailable_command)
             continue
-        print(messages.end)
-        end_choice = input()
+        end_choice = input(messages.end)
         if end_choice == messages.no:
             end = True
