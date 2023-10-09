@@ -9,7 +9,7 @@ if __name__ == '__main__':
     word = random.choice(words.word_list)
     blanks = [messages.blank] * len(word)
     stage_counter = 6
-    while stage_counter > 0 or messages.blank not in blanks:
+    while stage_counter > 0 and messages.blank not in blanks:
         print(art.stages[stage_counter])
         letter = input(messages.prompt)
         if letter.lower() in blanks:
